@@ -1,20 +1,24 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introduccion 
+API para el sitio Escuela U. 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Comenzando...
+
+1.	Proceso de Instalación
+    -Clonar repo a tu disco duro
+    -Con una IDE para Java, (puede ser Eclipse o IntelliJ Idea), importar como proyecto maven('Import Maven project')
+    -Para ejecutar el proyecto, correr como java ('Run as Java application') en la clase JavaApplication.java, en la raiz del proyecto
+
+2.	Dependencias
+    -JPA (Java persistency annotations)
+    -MySQL Drivers
+    -Web
+    -DevTools
+    Todo será descargado al momento de importar el proyecto
+
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Para ejecutar el proyecto, correr como java ('Run as Java application') en la clase JavaApplication.java, en la raiz del proyecto. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# Contribuir
+1) NO TOCAR JAVAAPPLICATION.JAVA!
+2) Mantenter el Orden y la limpiza en el codigo.
