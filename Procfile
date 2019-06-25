@@ -1,0 +1,1 @@
+web: java -jar target/API_SitioU-1.0.jar
