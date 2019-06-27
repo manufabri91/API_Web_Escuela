@@ -12,14 +12,13 @@ import com.EscuelaU.API_SitioU.Models.Greeting;
 
 @CrossOrigin
 @RestController
-
-public class MainController {
-    private static final String template = "Hola, %s!";
+@RequestMapping("/alumnos")
+public class AlumnosController {
     private final AtomicLong counter = new AtomicLong();
     
-    @RequestMapping(value = "/saludar", method = RequestMethod.GET)
-    public Greeting greeting(@RequestParam(value="name", defaultValue="Escuela!") String name) {
+    @RequestMapping(value = "/lista", method = RequestMethod.GET)
+    public Greeting greeting(@RequestParam(value="name", defaultValue="alumno 1") String name) {
         return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+                            String.format("alumno: ", name));
     }
 }

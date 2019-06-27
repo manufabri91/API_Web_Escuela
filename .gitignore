@@ -1,12 +1,12 @@
 HELP.md
 !.mvn/wrapper/maven-wrapper.jar  
-target/
-.env
+/target/
 ### STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
+.env
 .settings
 .springBeans
 .sts4-cache
