@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.EscuelaU.API_SitioU.Models.Usuario;
 import com.EscuelaU.API_SitioU.Models.UsuarioDAO;
-
+@CrossOrigin
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
