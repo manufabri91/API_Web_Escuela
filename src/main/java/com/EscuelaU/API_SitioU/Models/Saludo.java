@@ -1,11 +1,11 @@
 package com.EscuelaU.API_SitioU.Models;
 
-public class Greeting {
+public class Saludo {
 
 	    private final long id;
 	    private final String content;
 
-	    public Greeting(long id, String content) {
+	    public Saludo(long id, String content) {
 	        this.id = id;
 	        this.content = content;
 	    }
