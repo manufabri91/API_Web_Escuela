@@ -12,7 +12,7 @@ import com.EscuelaU.API_SitioU.Models.Saludo;
 
 @CrossOrigin
 @RestController
-
+@RequestMapping("/demo")
 public class DemoController {
     private static final String template = "Hola, %s!";
     private final AtomicLong counter = new AtomicLong();
