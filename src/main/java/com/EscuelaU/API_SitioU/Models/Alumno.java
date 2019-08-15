@@ -48,7 +48,7 @@ public class Alumno {
 	@OneToOne(cascade = CascadeType.ALL)
 	//ESTA ANOTACION INDICA COMO SE REALIZA LA RELACION ENTRE LAS TABLAS
 	@PrimaryKeyJoinColumn
-	@JsonProperty("telefono")
+	@JsonProperty("usuario")
 	@NotNull
 	private Usuario usuario;
 	
