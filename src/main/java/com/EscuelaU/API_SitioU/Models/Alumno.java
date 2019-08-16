@@ -45,7 +45,7 @@ public class Alumno {
 	private String telefono;
 	
 	//CON ONE TO ONE INDICO LA RELACION
-	@OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "alumno", cascade = CascadeType.ALL)
 	private Usuario usuario;
 	
 	
