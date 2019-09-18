@@ -47,8 +47,19 @@ public class AlumnosController {
     	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    
+    @RequestMapping(value = "/getAlumno/{legajo}", method = RequestMethod.GET)
+    public ResponseEntity<Alumno> getAlumno(@PathVariable Long legajo) {
+    	
+    	if(alumnoDAO.findById(legajo).isPresent()) {
+    		Alumno alumno = alumnoDAO.findById(legajo);
+    		return new ResponseEntity<Alumno>(alumno, HttpStatus.OK);
+    	} 
+    	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
     @PutMapping(value = "/actualizar")
-    public ResponseEntity<Alumno> actualiar(@Valid @RequestBody Alumno alumno) {
+    public ResponseEntity<Alumno> actualizar(@Valid @RequestBody Alumno alumno) {
     	
     	if(alumnoDAO.findById(alumno.getLegajo()).isPresent()) {
     		alumnoDAO.save(alumno);
