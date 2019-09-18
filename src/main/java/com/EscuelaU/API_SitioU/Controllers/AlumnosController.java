@@ -50,10 +50,9 @@ public class AlumnosController {
     
     @RequestMapping(value = "/getAlumno/{legajo}", method = RequestMethod.GET)
     public ResponseEntity<Alumno> getAlumno(@PathVariable Long legajo) {
-    	
-    	if(alumnoDAO.findById(legajo).isPresent()) {
-    		Alumno alumno = alumnoDAO.findById(legajo);
-    		return new ResponseEntity<Alumno>(alumno, HttpStatus.OK);
+    	Optional<Alumno> alumno = alumnoDAO.findById(legajo)
+    	if(alumno.isPresent()) {
+    		return new ResponseEntity<Alumno>(alumno.get(), HttpStatus.OK);
     	} 
     	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
