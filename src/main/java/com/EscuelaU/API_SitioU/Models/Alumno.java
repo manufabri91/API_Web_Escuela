@@ -29,7 +29,7 @@ public class Alumno {
 	private String apellido;
 
 	@JsonProperty("nacimiento")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM-dd")
     @Past
     @NotNull
 	private Date nacimiento;
