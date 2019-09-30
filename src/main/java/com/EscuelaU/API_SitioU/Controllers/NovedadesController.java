@@ -49,7 +49,7 @@ public class NovedadesController {
     }
 
     
-    @RequestMapping(value = "/getDocente/{id_novedad}", method = RequestMethod.GET)
+    @RequestMapping(value = "/getNovedad/{id_novedad}", method = RequestMethod.GET)
     public ResponseEntity<Novedad> getNovedad(@PathVariable Long id_novedad) {
     	Optional<Novedad> novedad = novedadDAO.findById(id_novedad);
     	if(novedad.isPresent()) {
