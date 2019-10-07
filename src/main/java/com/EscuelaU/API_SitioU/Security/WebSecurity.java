@@ -16,6 +16,7 @@ import com.EscuelaU.API_SitioU.Models.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 
 import static com.EscuelaU.API_SitioU.Security.SecurityConstants.SIGN_UP_URL;
+import static com.EscuelaU.API_SitioU.Security.SecurityConstants.NOVEDADES_URL;
 
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
@@ -31,6 +32,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable().authorizeRequests()
                 .antMatchers(HttpMethod.POST, SIGN_UP_URL).permitAll()
+                .antMatchers(HttpMethod.GET, NOVEDADES_URL).permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
