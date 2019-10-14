@@ -22,6 +22,10 @@ public class Novedad {
 	@JsonProperty("cuerpo")
     @NotBlank
 	private String cuerpo;
+	
+	@JsonProperty("resumen")
+    @NotBlank
+	private String resumen;
 
 	@JsonProperty("importante")
 	private boolean importante;
@@ -40,6 +44,15 @@ public class Novedad {
 
 	public void setCuerpo(String cuerpo) {
 		this.cuerpo = cuerpo;
+	}
+
+
+	public String getResumen() {
+		return resumen;
+	}
+
+	public void setResumen(String resumen) {
+		this.resumen = resumen;
 	}
 
 	public boolean isImportante() {
