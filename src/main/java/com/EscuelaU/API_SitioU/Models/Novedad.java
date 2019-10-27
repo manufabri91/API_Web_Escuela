@@ -1,5 +1,6 @@
 package com.EscuelaU.API_SitioU.Models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,6 +26,7 @@ public class Novedad {
 	
 	@JsonProperty("resumen")
     @NotBlank
+	@Column(columnDefinition="TEXT")
 	private String resumen;
 
 	@JsonProperty("importante")
