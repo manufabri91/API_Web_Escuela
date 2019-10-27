@@ -23,11 +23,11 @@ public class Novedad {
 	
 	@JsonProperty("cuerpo")
     @NotBlank
+    @Lob
 	private String cuerpo;
 	
 	@JsonProperty("resumen")
     @NotBlank
-    @Lob
 	private String resumen;
 
 	@JsonProperty("importante")
