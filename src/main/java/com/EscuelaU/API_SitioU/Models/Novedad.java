@@ -1,11 +1,13 @@
 package com.EscuelaU.API_SitioU.Models;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+
+import org.hibernate.annotations.Type;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -22,7 +24,7 @@ public class Novedad {
 	
 	@JsonProperty("cuerpo")
     @NotBlank
-	@Column(columnDefinition="TEXT")
+    @Type(type="text")
 	private String cuerpo;
 	
 	@JsonProperty("resumen")
